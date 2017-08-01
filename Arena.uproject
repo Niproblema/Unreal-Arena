@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{4525D718-424B-661D-BC2D-079223E4A357}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Arena",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
