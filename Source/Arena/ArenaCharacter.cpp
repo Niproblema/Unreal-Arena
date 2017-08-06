@@ -63,10 +63,10 @@ void AArenaCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AArenaCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AArenaCharacter::LookUpAtRate);
+	//PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);			//Disable, is topDown view
+	//PlayerInputComponent->BindAxis("TurnRate", this, &AArenaCharacter::TurnAtRate);
+	//PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput); 
+	//PlayerInputComponent->BindAxis("LookUpRate", this, &AArenaCharacter::LookUpAtRate);
 
 	// handle touch devices
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AArenaCharacter::TouchStarted);
@@ -84,12 +84,12 @@ void AArenaCharacter::OnResetVR()
 
 void AArenaCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		Jump();
+		//Jump(); //Why Jump?
 }
 
 void AArenaCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		StopJumping();
+		//StopJumping(); //Dont need
 }
 
 void AArenaCharacter::TurnAtRate(float Rate)
