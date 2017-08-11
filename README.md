@@ -9,7 +9,7 @@ TODO:
  1. Rolling
  1. Tilt controlls
  1. Aiming and strafing blendspace.
- 1. Tilt controlls
+ 1. Touch controlls should not show in menues.
  
  
 TODO FIX:
