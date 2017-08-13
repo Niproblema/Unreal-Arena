@@ -14,3 +14,4 @@ TODO:
  
 TODO FIX:
  1. Camera jumps on obstacles. Camera boom?
+ 1. SaveFiles saves Avatar image ref instead of Image index.
